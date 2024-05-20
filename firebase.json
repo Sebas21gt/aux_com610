@@ -1,0 +1,25 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "auxcom610",
+          "appId": "1:789731910065:android:dd908b6df73d8dd8dadd90",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "auxcom610",
+          "configurations": {
+            "android": "1:789731910065:android:dd908b6df73d8dd8dadd90",
+            "ios": "1:789731910065:ios:6f2ac93cd33179badadd90",
+            "macos": "1:789731910065:ios:6f2ac93cd33179badadd90",
+            "web": "1:789731910065:web:aa513b49f8c9a6aadadd90",
+            "windows": "1:789731910065:web:7088a9c59bf1fa62dadd90"
+          }
+        }
+      }
+    }
+  }
+}
