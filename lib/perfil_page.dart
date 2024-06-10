@@ -2,6 +2,7 @@
 
 import 'package:com610/home_page.dart';
 import 'package:com610/login_page.dart';
+import 'package:com610/productos_realtime_page.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
@@ -91,6 +92,24 @@ class _PerfilPageState extends State<PerfilPage> {
                   },
                   child: const Text(
                     "PERFIL",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+                TextButton(
+                  onPressed: () {
+                    Navigator.pushReplacement(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => ProductosRealtimePage(),
+                      ),
+                    );
+                  },
+                  child: const Text(
+                    "Productos Realtime",
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 16,

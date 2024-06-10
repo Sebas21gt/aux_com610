@@ -1,8 +1,7 @@
 // ignore_for_file: use_build_context_synchronously
 
-import 'package:com610/login_page.dart';
 import 'package:com610/perfil_page.dart';
-import 'package:firebase_auth/firebase_auth.dart';
+import 'package:com610/productos_realtime_page.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -55,6 +54,24 @@ class HomePage extends StatelessWidget {
                   },
                   child: const Text(
                     "PERFIL",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+                TextButton(
+                  onPressed: () {
+                    Navigator.pushReplacement(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => ProductosRealtimePage(),
+                      ),
+                    );
+                  },
+                  child: const Text(
+                    "Productos Realtime",
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 16,
